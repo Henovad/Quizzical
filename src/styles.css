@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+:root {
+    --clr-darkblue: #293264;
+    --clr-purple: #4D5B9E;
+    --clr-green: #94D7A2;
+    --clr-lightblue: #D6DBF5;
+    --clr-white: #F5F7FB;
+
+    --ff-primary: 'Inter', sans-serif;
+    --ff-secondary: 'Karla', sans-serif;
+
+    --fw-reg: 400;
+    --fw-mid: 500;
+    --fw-bold: 700;
+
+    --fs-h1: 3rem;
+    --fs-h2: 1.2rem;
+    --fs-h3: 1.25rem;
+    --fs-body: .9rem;
+}
+
+body {
+    margin: 0;
+    font-size: var(--fs-body);
+    color: var(--clr-darkblue);
+    font-family: var(--ff-primary);
+    background-color:rgb(247, 247, 247);
+    background-image: url('./images/marcel.jpg');
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    margin: 0;
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    margin-top: 7px;
+    font-size: var(--fs-h3);
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+}
+
+.btn {
+    background-color: var(--clr-purple);
+    color: var(--clr-white);
+    padding: 1em 2.5em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+menu{
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu--btn{
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+
+main{
+    padding: 50px 100px;
+}
+
+.check--btn{
+    font-size: 1.2rem;
+}
+
+.btn--container{
+    display: flex;
+    justify-content: center;
+}
+
+.answers-contianer{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.answer{
+    padding: .5em 1em;
+    border: 1px solid var(--clr-purple);
+    border-radius: 10px;
+}
+
+.question--container{
+    margin-bottom: 30px;
+}
+
+
+.score{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    margin-right: 40px;
+}
